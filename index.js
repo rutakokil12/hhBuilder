@@ -1,10 +1,11 @@
 var array =[];
+
 document.addEventListener( "DOMContentLoaded", function() {
   var form =document.getElementsByTagName("form")[0];
   var buttonClasses = document.getElementsByClassName("debug")[0].classList;
   buttonClasses.remove("debug");
   var listOfHousehold = document.getElementsByClassName("add")[0].parentNode.appendChild(document.createElement("div"));
-   
+   //eventListener on click of add button
   document.getElementsByClassName("add")[0].addEventListener( "click", function( e ){
     		e.preventDefault();
     		buttonClasses.remove("debug");
@@ -15,10 +16,11 @@ document.addEventListener( "DOMContentLoaded", function() {
    	        //if(!array.includes(data)){ // not to include duplicate entries
             array.push(data);
             clearData();
-            listOfHousehold.innerHTML = "</br></br>List of Household members</br></br>" + array;
+            listOfHousehold.innerHTML = "</br></br>Growing list of Household members</br></br>" + array;
   	    }
         console.log(array);
    }, false);
+	//Event listener on click of submit button
         form.addEventListener( "submit", function( e ) {
 			      e.preventDefault();
 			      if(array === [] ){
