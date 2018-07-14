@@ -1,0 +1,35 @@
+Household builder
+Given description - 
+
+Your application needs a way to capture information about a household applying for health insurance coverage. 
+Develop a UI for building a household up from individual people.
+
+Find below Requirements and functionality I used for every requirement-
+
+As per thr requirement I did not change anything in index.html, but manipulated DOM from index.js
+
+In the given index.js file, I have added comments for each functionality to make the code easily understandable:
+
+1.Validate data entry (age is required and > 0, relationship is required)-
+   user cannot add the details unless above validation criteria are satisfied.
+   he cannot click submit unless he adds details for at least one household.
+   
+2.Add people to a growing household list-
+   if validation criteria in step  1 is satisfied, user can add household details and he can see growing list of households as 
+   he goes on adding details for every household
+
+3.Remove a previously added person from the list
+  When user submit the details,  functionalityhas been added  to remove previously added person from the list.
+  
+4.Display the household list in the HTML as it is modified.
+  a small function has been added to display modified list (without any duplicate records) after submit so as to make UI less heavy. 
+  We can display the list anywhere as per the client requirement. Alsoin this javascript, filter function is used from Ecmascript 3 version.
+  There is an alternative for this approach in Ecmascript 6 , where we can simply add list in set to remove all duplicate values.
+  This is because SET collection does not allow duplicates.
+  
+5.Serialize the household as JSON upon form submission as a fake trip to the server
+  There is a smalll functionality to convert data in form fields to json and display it after submitting the form.
+  
+ There is one extra functionality to clear the previously filled data from form fields, once user add the household details.
+ 
+ Happy to add any further functionality as per the requirement.
