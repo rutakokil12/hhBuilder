@@ -1,10 +1,11 @@
 Household builder
+
 Given description - 
 
 Your application needs a way to capture information about a household applying for health insurance coverage. 
 Develop a UI for building a household up from individual people.
 
-Find below Requirements and functionality I used for every requirement-
+Requirements and functionality used for each requirement-
 
 As per thr requirement I did not change anything in index.html, but manipulated DOM from index.js
 
